@@ -12,7 +12,7 @@ export default class PlantList extends Component {
 
   componentDidMount()
   {
-    axios.get("https://localhost:3333/plants")
+    axios.get("http://localhost:3333/plants")
     .then(response =>  {
         this.setState({
           ...this.state,
